@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday 5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+
+        body {
+
+            /* add background image start*/
+            background: 
+                        url('img/bg\ 5.avif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+
+                        /* add background image start*/
+        }
+
+
+/* card css start*/
+        .card {
+            width: 40rem;
+            height: 36rem;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            background-color: #eeeff0;
+            padding-top: 20px;
+            background-image: url('img/card\ 5.avif');
+        }
+        .card:hover {
+            transform: scale(1.05);
+            background-color: #b37a7a;
+           
+        }
+       
+
+        .card-img-top  {
+            height: 180px;
+            width: 70%;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            animation: slide 3s infinite;
+           
+        }
+/*medie queary for all text and imgages start*/
+        @media (max-width:499px) {
+            .container-center{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            
+        }
+        /*medie queary for all text and imgages ends*/
+        .card{
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title{
+            color: white;
+            text-align: center;
+            font-size: 30px; /* Increase the size as needed */
+        }
+
+        @media (max-width: 575px) {
+            .card-title {
+                font-size: 24px; /* Increased font size for screens 575px or smaller */
+                text-align: center;
+                padding-left: 20px;
+            }
+        }
+
+        .card-text{
+            color:white;
+            text-align: center;
+            font-size: 20px; /* Increase the size as needed */
+           
+        }
+        @media (max-width:575px){
+            .card-text{
+                font-size:20px;
+                text-align: center; 
+            }
+        }
+
+/* card css ends*/
+
+      /* animation for card image start 
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+         animation for card image start of birthday */
+         @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+          }
+        
+          @keyframes fall {
+            0% { transform: translateY(-50px) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+          }
+        
+          .birthday-decor {
+            position: absolute;
+            pointer-events: none;
+          }
+        
+          .cake {
+            width: 60px;
+            height: 60px;
+            background-color: #b108d3;
+            border-radius: 50% 50% 0 0;
+            bottom: 20px;
+            left: 20px;
+          }
+        
+          .candle {
+            width: 8px;
+            height: 20px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 60px;
+          }
+        
+          .flame {
+            width: 8px;
+            height: 8px;
+            background-color: #ffd700;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            position: absolute;
+            bottom: 80px;
+            animation: flicker 0.5s infinite alternate;
+          }
+        
+          .confetti {
+            width: 10px;
+            height: 10px;
+            background-color: #ff6b6b;
+            position: absolute;
+            animation: fall 5s linear infinite;
+          }
+          /*animation for card image ends of birthday */
+
+         /*card zoom animation start*/
+         .card {
+          animation: float 6s ease-in-out infinite;
+          transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+          transform: scale(1.05);
+        }
+        
+        .card-title {
+          animation: pulse 2s ease-in-out infinite;
+        }
+        
+        /*.card-img-top {
+          animation: rotate 20s linear infinite;
+        }*/
+        
+        .card-body {
+          animation: fadeIn 1.5s ease-out;
+        }
+        
+        @keyframes float {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+        
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.05);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        
+        @keyframes rotate {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        
+         /*card zoom animation ends*/
+    </style>
+</head>
+<body>
+     
+<!-- main container start -->
+
+<div class="container-center" style="position: relative; overflow: hidden;">
+ 
+    <div class="card p-3">
+      <h5 class="card-title">HAPPY BIRTHDAY</h5>
+      <img src="img/cute-baby-girl.avif" class="card-img-top mt-3" alt="..." style="box-shadow: 0px 4px 8px rgba(39, 38, 38, 0.1); border: 2px solid #ccc; display: block; margin: 0 auto; border-radius: 50%; width: 200px; height: 200px; object-fit: cover;">
+      <div class="card-body mt-5">
+        <h5 class="card-title">Join us to celebrate Olivia's 3rd birthday !</h5>
+        <p class="card-text">Saturday, October 17th at 2 p.m. 123<br> Anywhere St.,Any City, ST 12345</p>
+        <p class="card-text mt-5 mb-5">RSVP to Lillian Pratt(Carey's Mom)<br>123-456-7890</p>
+      </div>
+    </div>
+    
+    <div class="birthday-decor cake"></div>
+    <div class="birthday-decor candle" style="left: 40px;"></div>
+    <div class="birthday-decor flame" style="left: 40px;"></div>
+    <div class="birthday-decor candle" style="left: 55px;"></div>
+    <div class="birthday-decor flame" style="left: 55px;"></div>
+    
+    <div class="birthday-decor confetti" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="birthday-decor confetti" style="left: 30%; animation-delay: 1s; background-color: #4ecdc4;"></div>
+    <div class="birthday-decor confetti" style="left: 50%; animation-delay: 2s; background-color: #45b7d1;"></div>
+    <div class="birthday-decor confetti" style="left: 70%; animation-delay: 3s; background-color: #f7b731;"></div>
+    <div class="birthday-decor confetti" style="left: 90%; animation-delay: 4s; background-color: #a55eea;"></div>
+  
+
+  </div>
+ 
+<!-- main container ends -->
+
+</body>
+</html>
